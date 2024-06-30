@@ -36,11 +36,11 @@ sudo -u postgres createdb -O zabbix zabbix
  
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix 
 ```
-# Изменение сервера на 10.10.10.10 и пароля 
+# Изменение сервера на ваш и пароля 
 ```
 sudo sed -i 's/DBHost=localhost/DBHost=10.10.10.10/g' /etc/zabbix/zabbix_server.conf 
  
-sudo sed -i 's/DBPassword=/DBPassword=0102030201z/g' /etc/zabbix/zabbix_server.conf 
+sudo sed -i 's/DBPassword=/DBPassword=123456/g' /etc/zabbix/zabbix_server.conf 
 ```
 # Перезапуск Zabbix сервера 
 ```
