@@ -28,7 +28,7 @@ sudo apt-get update
  
 apt install zabbix-server-pgsql zabbix-frontend-php php8.3-pgsql zabbix-nginx-conf zabbix-sql-scripts zabbix-agent 
 ```
-#Создание базы данных  
+# Создание базы данных  
 ```
 sudo -u postgres createuser --pwprompt zabbix 
  
